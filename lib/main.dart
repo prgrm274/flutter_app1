@@ -36,14 +36,14 @@ class _Statenya extends State<Statefulnya> {
 
                     for (int i=0; i<intStr; i++) {
                       if (i % 3 == 0) {
-                        print('Fizz');
+                        print('Fizz ');
 //                        print('Fizz = $intStr');
                       } else if (i % 5 == 0) {
-                        print('Buzz');
+                        print('Buzz ');
                       } else if (i % 3 == 0 && i % 5 == 0) {
-                        print('FizzBuzz');
+                        print('FizzBuzz ');
                       } else {
-                        print('$i');
+                        print('$i ');
                       }
                     }
                   }),
