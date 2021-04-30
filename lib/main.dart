@@ -34,14 +34,17 @@ class _Statenya extends State<Statefulnya> {
                   onChanged: (value) {
                     var intStr = int.parse(value);
 
-                    if (intStr % 3 == 0) {
-                      print('Fizz = $intStr');
-                    } else if (intStr % 5 == 0) {
-                      print('Buzz = $intStr');
-                    } else if (intStr % 3 == 0 && intStr % 5 == 0) {
-                      print('FizzBuzz = $intStr');
-                    } else {
-                      print('$intStr');
+                    for (int i=0; i<intStr; i++) {
+                      if (i % 3 == 0) {
+                        print('Fizz');
+//                        print('Fizz = $intStr');
+                      } else if (i % 5 == 0) {
+                        print('Buzz');
+                      } else if (i % 3 == 0 && i % 5 == 0) {
+                        print('FizzBuzz');
+                      } else {
+                        print('$i');
+                      }
                     }
                   }),
               ElevatedButton(
